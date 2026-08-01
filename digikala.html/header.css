@@ -1,0 +1,52 @@
+html {
+    direction: rtl;
+    font-family: "Baloo Bhaijaan 2", sans-serif;
+}
+
+.top-section {
+    display: flex;
+    width: 100%;
+    gap: 8px;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.bottom-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+}
+
+.btn,
+.btn-digi {
+    font-family: "Baloo Bhaijaan 2", sans-serif;
+    border: 1px solid rgb(217, 215, 215);
+    border-radius: 8px;
+    padding: 6px 12px;
+    font-size: 13px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    cursor: pointer;
+    flex-direction: column
+}
+
+.btn {
+    background-color: white;
+    color: black;
+}
+
+.btn-digi {
+    background-color: #E40138;
+    color: white;
+}
+
+.icon-btn {
+    width: 30px;
+    height: 25px;
+    object-fit: contain;
+}
