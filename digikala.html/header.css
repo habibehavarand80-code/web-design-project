@@ -59,8 +59,10 @@ html {
 }
 .search-wrapper{
     position: relative;
+    display: flex;
+    
 }
-.search-wrapper i {
+.fa-magnifying-glass{
   position: absolute;
   right: 15px;
   top: 13px;
@@ -68,7 +70,7 @@ html {
   font-size: 20px;
 }
 .search-box {
-  width: 450px;
+  width: 435px;
   padding: 14px 47px;
   border: 1px solid rgb(216, 216, 216);
   border-radius: 25px;
@@ -77,4 +79,33 @@ html {
     position: absolute;
     top: 15px;
     right: 114px;
+}
+.fa-camera {
+  position: absolute;
+  right: 490px;
+  top: 12px;
+  color: rgb(90, 48, 226);
+  font-size: 20px;
+}
+.bell-btn{
+    background-color: white;
+    border: 1px solid rgb(211, 211, 211);
+    padding: 11px;
+    border-radius: 30px;
+}
+.fa-bell{
+    font-size: 24px;
+}
+.location{
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+}
+.location p{
+    padding-inline: 7px;
+    font-size: 13px;
+    margin: 0;
+}
+.fa-location-dot,.fa-chevron-down{
+    font-size: 13px;
 }
