@@ -1,6 +1,7 @@
 html {
     direction: rtl;
     font-family: "Baloo Bhaijaan 2", sans-serif;
+    background-color: rgb(235, 233, 233);
 }
 
 .top-section {
@@ -49,4 +50,31 @@ html {
     width: 30px;
     height: 25px;
     object-fit: contain;
+}
+.search-box::placeholder{
+    font-family: "Baloo Bhaijaan 2", sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: #acabab;
+}
+.search-wrapper{
+    position: relative;
+}
+.search-wrapper i {
+  position: absolute;
+  right: 15px;
+  top: 13px;
+  color: rgb(167, 166, 166);
+  font-size: 20px;
+}
+.search-box {
+  width: 450px;
+  padding: 14px 47px;
+  border: 1px solid rgb(216, 216, 216);
+  border-radius: 25px;
+}
+.digikala-icon{
+    position: absolute;
+    top: 15px;
+    right: 114px;
 }
