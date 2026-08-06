@@ -18,13 +18,18 @@ html {
     align-items: center;
     padding: 8px;
 }
+.right-section{
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
 
 .btn,
 .btn-digi {
     font-family: "Baloo Bhaijaan 2", sans-serif;
     border: 1px solid rgb(217, 215, 215);
     border-radius: 8px;
-    padding: 6px 12px;
+    padding: 4px 6px;
     font-size: 13px;
     flex-grow: 1;
     flex-shrink: 1;
@@ -47,8 +52,8 @@ html {
 }
 
 .icon-btn {
-    width: 30px;
-    height: 25px;
+    width: 40px;
+    height: 35px;
     object-fit: contain;
 }
 .search-box::placeholder{
@@ -60,7 +65,8 @@ html {
 .search-wrapper{
     position: relative;
     display: flex;
-    
+    flex: 1;
+    width: 100%;
 }
 .fa-magnifying-glass{
   position: absolute;
@@ -70,10 +76,11 @@ html {
   font-size: 20px;
 }
 .search-box {
-  width: 435px;
+  
   padding: 14px 47px;
   border: 1px solid rgb(216, 216, 216);
   border-radius: 25px;
+  flex: 1;
 }
 .digikala-icon{
     position: absolute;
@@ -82,16 +89,19 @@ html {
 }
 .fa-camera {
   position: absolute;
-  right: 490px;
+  left: 20px;
   top: 12px;
   color: rgb(90, 48, 226);
   font-size: 20px;
+  align-items: center;
+  flex: 1;
 }
 .bell-btn{
     background-color: white;
     border: 1px solid rgb(211, 211, 211);
     padding: 11px;
     border-radius: 30px;
+    margin-right: 13px;
 }
 .fa-bell{
     font-size: 24px;
@@ -108,4 +118,45 @@ html {
 }
 .fa-location-dot,.fa-chevron-down{
     font-size: 13px;
+}
+.slides img{
+    width: 95%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-inline: 3px;
+    flex-shrink: 0;
+    flex: 0 0 95%;
+    
+}
+.slider{
+    height: 250px;
+    overflow: hidden;
+    margin-top: 8px;
+}
+.slides{
+    
+    display: flex;
+    padding: 0 3.5%;
+    animation: slides 22s infinite;
+}
+@keyframes slides{
+    0% , 15%{
+        transform: translateX(0);
+    }
+    20% , 35% {
+        transform: translateX(87%);
+    }
+    40% , 55%{
+        transform: translateX(177%);
+    }
+    60% , 75%{
+        transform: translateX(266%);
+    }
+    80% , 95%{
+        transform: translateX(355%);
+    }
+    100%{
+        transform: translateX(445%);
+    }
 }
