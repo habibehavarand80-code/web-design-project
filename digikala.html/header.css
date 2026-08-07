@@ -130,7 +130,7 @@ html {
     
 }
 .slider{
-    height: 250px;
+    height: 210px;
     overflow: hidden;
     margin-top: 8px;
 }
@@ -159,4 +159,39 @@ html {
     100%{
         transform: translateX(445%);
     }
+}
+.circle-icons-box{
+    display: flex;
+    gap: 20px;
+    justify-content: start;
+    align-items: flex-start;
+    background-color: white;
+    padding-top: 20px;
+    padding-right: 25px;
+}
+.circle-icons-box img{
+    width: 55px;
+    border-radius: 30px;
+}
+.icon-text{
+    width: 55px;
+    line-height: 15px;
+    font-size: 12px;
+    font-weight: bold;
+    align-items: center;
+    
+}
+.icon-text p{
+    width: 55px;
+    text-align: center;
+}
+.more-btn{
+    width: 55px;
+    padding-left: 5px;
+    height: 55px;
+    border: 1px solid rgb(220, 218, 218);
+    border-radius: 40px;
+    font-weight: bold;
+    font-size: 30px;
+    color: rgb(120, 112, 112);
 }
